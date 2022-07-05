@@ -9,7 +9,7 @@ const openMenu = (data = null) => {
             let isMenuHeader = item.isMenuHeader;
             let isDisabled = item.disabled;
             let icon = item.icon;
-            html += getButtonRender(header, message, index, isMenuHeader, isDisabled, icon);  
+            html += getButtonRender(header, message, index, isMenuHeader, isDisabled, icon);
             if (item.params) buttonParams[index] = item.params;
         }
     });

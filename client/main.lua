@@ -8,12 +8,12 @@ local sendData = nil
 -- Functions
 local function openMenu(data)
     if not data or not next(data) then return end
-	for k,v in pairs(data) do 
+	for k,v in pairs(data) do
 		if v["icon"] then
-			local img = "nui://qb-inventory/html/"
+			local img = "nui://lj-inventory/html/"
 			if QBCore.Shared.Items[tostring(v["icon"])] then
 				if not string.find(QBCore.Shared.Items[tostring(v["icon"])].image, "http") then
-					if not string.find(QBCore.Shared.Items[tostring(v["icon"])].image, "images/") then 
+					if not string.find(QBCore.Shared.Items[tostring(v["icon"])].image, "images/") then
 						img = img.."images/"
 					end
 					v["icon"] = img..QBCore.Shared.Items[tostring(v["icon"])].image
