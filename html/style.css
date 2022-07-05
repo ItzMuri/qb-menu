@@ -71,7 +71,7 @@ body::-webkit-scrollbar { display: none; }
 }
 
 .icon > img {
-	width: 2.2vh !important;
+	width: 2.2vh !important; 
 }
 
 .icon {
