@@ -24,46 +24,35 @@ local function openMenu(data)
     SetNuiFocus(true, true)
     headerShown = false
     sendData = data
-    SendNUIMessage({
-        action = 'OPEN_MENU',
-        data = table.clone(data)
-    })
+    SendNUIMessage({ action = 'OPEN_MENU', data = table.clone(data) })
 end
 
 local function closeMenu()
     sendData = nil
     headerShown = false
     SetNuiFocus(false)
-    SendNUIMessage({
-        action = 'CLOSE_MENU'
-    })
+    SendNUIMessage({ action = 'CLOSE_MENU' })
 end
 
 local function showHeader(data)
     if not data or not next(data) then return end
     headerShown = true
     sendData = data
-    SendNUIMessage({
-        action = 'SHOW_HEADER',
-        data = table.clone(data)
-    })
+    SendNUIMessage({ action = 'SHOW_HEADER', data = table.clone(data) })
 end
 
 -- Events
 
-RegisterNetEvent('qb-menu:client:openMenu', function(data)
-    openMenu(data)
-end)
+RegisterNetEvent('qb-menu:client:openMenu', function(data) openMenu(data) end)
 
-RegisterNetEvent('qb-menu:client:closeMenu', function()
-    closeMenu()
-end)
+RegisterNetEvent('qb-menu:client:closeMenu', function() closeMenu() end)
 
 -- NUI Callbacks
 
 RegisterNUICallback('clickedButton', function(option)
     if headerShown then headerShown = false end
-    PlaySoundFrontend(-1, 'Highlight_Cancel', 'DLC_HEIST_PLANNING_BOARD_SOUNDS', 1)
+    --PlaySoundFrontend(-1, 'Highlight_Cancel', 'DLC_HEIST_PLANNING_BOARD_SOUNDS', 1)
+    PlaySound(-1, "CLICK_BACK", "WEB_NAVIGATION_SOUNDS_PHONE", 0, 0, 1)
     SetNuiFocus(false)
     if sendData then
         local data = sendData[tonumber(option)]
@@ -93,17 +82,10 @@ RegisterNUICallback('closeMenu', function()
 end)
 
 -- Command and Keymapping
-
-RegisterCommand('playerfocus', function()
-    if headerShown then
-        SetNuiFocus(true, true)
-    end
-end)
-
+RegisterCommand('playerfocus', function() if headerShown then SetNuiFocus(true, true) end end)
 RegisterKeyMapping('playerFocus', 'Give Menu Focus', 'keyboard', 'LMENU')
 
 -- Exports
-
 exports('openMenu', openMenu)
 exports('closeMenu', closeMenu)
 exports('showHeader', showHeader)

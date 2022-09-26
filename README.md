@@ -2,7 +2,7 @@
 Menu System for the QBCore Framework, attempted to add inventory images to the buttons
 This is a modified version of **[NH Context](https://forum.cfx.re/t/no-longer-supported-standalone-nerohiro-s-context-menu-dynamic-event-firing-menu/2564083)** by **[NeroHiro](https://github.com/nerohiro)**
 
-Original made by QBCore, edited by FjamZoo#0001 and Jerzy#9709
+Original made by QBCore, edited by Jimathy
 
 For more releases join Renewed scripts https://discord.gg/NukW4RTF
 

@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+:root {
+	--clr-yes: 8px solid red;
+	--font-family: "Poppins", sans-serif !important;
+}
+
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: var(--font-family);
 	font-weight: 300;
 }
 
@@ -65,7 +71,7 @@ body::-webkit-scrollbar { display: none; }
 
 
 .button:hover {
-	border-left: 8px solid red;
+	border-left: var(--clr-yes);;
 	background: rgba(0, 0, 0);
 	color: white;
 }
@@ -106,7 +112,7 @@ body::-webkit-scrollbar { display: none; }
 }
 
 .title {
-	font-family: "Poppins", sans-serif !important;
+	font-family: var(--font-family);
 	width: auto;
 	max-width: 46%;
 	height: 10%;
@@ -127,7 +133,7 @@ body::-webkit-scrollbar { display: none; }
 }
 
 .title > div.header {
-	font-family: "Poppins", sans-serif !important;
+	font-family: var(--font-family);
     text-decoration: underline !important;
 }
 
@@ -137,13 +143,13 @@ body::-webkit-scrollbar { display: none; }
 }
 
 div > .text {
-	font-family: "Poppins", sans-serif !important;
+	font-family: var(--font-family);
 	flex-direction: column;
 	font-size: 1.0vh;
 	overflow: hidden;
 }
 div > .header {
-	font-family: "Poppins", sans-serif !important;
+	font-family: var(--font-family);
 	width: 100%;
 	max-width: 100%;
 	display: flex;
