@@ -10,9 +10,10 @@ Edited again by Jimathy666#3450 - https://discord.gg/xKgQZ6wZvS
 
 ### Screenshot of the Edited Menu
 ![Example Menu](https://i.imgur.com/GFWRFwC.jpg)
-![Example Menu](https://i.imgur.com/3gw9SvL.mp4)
-#
 
+#
+ 
+ https://i.imgur.com/3gw9SvL.mp4
 --[[
 EXAMPLE MENU
 --]]
