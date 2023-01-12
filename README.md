@@ -10,7 +10,7 @@ Edited again by Jimathy666#3450 - https://discord.gg/xKgQZ6wZvS
 
 ### Screenshot of the Edited Menu
 ![Example Menu](https://i.imgur.com/GFWRFwC.jpg)
-![Example Menu](https://cdn.discordapp.com/attachments/921124582616879196/968823661559689236/ezgif-4-f6ef4195b8.gif?size=4096)
+![Example Menu](https://i.imgur.com/3gw9SvL.mp4)
 #
 
 --[[
